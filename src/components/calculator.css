@@ -1,0 +1,107 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "output output output output"
+    "AC AC DEL divide"
+    "1 2 3 mutliply"
+    "4 5 6 plus"
+    "7 8 9 minus"
+    "point 0 equal equal"
+    "errormsg errormsg errormsg errormsg";
+  column-gap: 2px;
+  row-gap: 2px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+
+.container button {
+  height: auto;
+  width: auto;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.output {
+  grid-area: output;
+  justify-self: end;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.ac {
+  grid-area: AC;
+}
+
+.del {
+  grid-area: DEL;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.one {
+  grid-area: "1";
+}
+
+.two {
+  grid-area: "2";
+}
+
+.three {
+  grid-area: "3";
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.four {
+  grid-area: "4";
+}
+
+.five {
+  grid-area: " 5";
+}
+
+.six {
+  grid-area: "6";
+}
+.plus {
+  grid-area: plus;
+}
+.seven {
+  grid-area: "7";
+}
+
+.eight {
+  grid-area: "8";
+}
+
+.nine {
+  grid-area: "9";
+}
+.minus {
+  grid-area: minus;
+}
+.point {
+  grid-area: point;
+}
+.zero {
+  grid-area: "0";
+}
+.equal {
+  grid-area: equal;
+}
+.errormsg {
+  grid-area: errormsg;
+
+  text-align: center;
+  color:red
+}
